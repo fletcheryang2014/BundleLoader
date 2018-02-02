@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fbe-JP-fJ9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FrameworkBundleLoader-->
+        <scene sceneID="Ktn-6Q-LQq">
+            <objects>
+                <viewController id="nqj-eS-32h" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVE-Zu-hfI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-Q8-R1P">
+                                <rect key="frame" x="118.5" y="132" width="138" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="P4C-2b-Lfz"/>
+                                    <constraint firstAttribute="width" constant="138" id="Wyw-m9-gf4"/>
+                                </constraints>
+                                <state key="normal" title="加载Framework页面"/>
+                                <connections>
+                                    <action selector="onLoadBtnClicked:" destination="nqj-eS-32h" eventType="touchUpInside" id="p4B-G9-iYe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fg5-Q8-R1P" firstAttribute="centerX" secondItem="eVE-Zu-hfI" secondAttribute="centerX" id="Tji-6g-Gh1"/>
+                            <constraint firstItem="fg5-Q8-R1P" firstAttribute="top" secondItem="iRB-qW-Ikx" secondAttribute="top" constant="68" id="fDs-LL-7kx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iRB-qW-Ikx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FrameworkBundleLoader" id="95o-6z-aob"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yws-aU-ZO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="271.21439280359823"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QFT-Do-zdH">
+            <objects>
+                <navigationController id="Fbe-JP-fJ9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rlJ-ui-llS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nqj-eS-32h" kind="relationship" relationship="rootViewController" id="mjf-7k-cEV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhM-9c-908" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1326" y="273"/>
+        </scene>
+    </scenes>
+</document>
