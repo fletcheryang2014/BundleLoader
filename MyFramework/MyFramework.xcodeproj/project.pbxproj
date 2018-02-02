@@ -15,8 +15,8 @@
 		BE0E7E782020532200B76CFC /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E7E762020532200B76CFC /* MyView.m */; };
 		BE0E7E7C2020543D00B76CFC /* NextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE0E7E792020543D00B76CFC /* NextViewController.h */; };
 		BE0E7E7D2020543D00B76CFC /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0E7E7A2020543D00B76CFC /* NextViewController.m */; };
-		BEE5C4432022DE3600502880 /* BundleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE5C4412022DE3600502880 /* BundleLoader.h */; };
-		BEE5C4442022DE3600502880 /* BundleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5C4422022DE3600502880 /* BundleLoader.m */; };
+		BE59BEC32024695C009ED17E /* BundleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59BEC12024695C009ED17E /* BundleLoader.m */; };
+		BE59BEC42024695C009ED17E /* BundleLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BE59BEC22024695C009ED17E /* BundleLoader.h */; };
 		BEE5C4772022FD8400502880 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = BEE5C4712022FD8300502880 /* user.json */; };
 		BEE5C4782022FD8400502880 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEE5C4722022FD8300502880 /* head.jpg */; };
 		BEE5C4792022FD8400502880 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE5C4732022FD8300502880 /* MyView.xib */; };
@@ -46,8 +46,8 @@
 		BE0E7E762020532200B76CFC /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		BE0E7E792020543D00B76CFC /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		BE0E7E7A2020543D00B76CFC /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
-		BEE5C4412022DE3600502880 /* BundleLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BundleLoader.h; sourceTree = "<group>"; };
-		BEE5C4422022DE3600502880 /* BundleLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BundleLoader.m; sourceTree = "<group>"; };
+		BE59BEC12024695C009ED17E /* BundleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleLoader.m; sourceTree = "<group>"; };
+		BE59BEC22024695C009ED17E /* BundleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleLoader.h; sourceTree = "<group>"; };
 		BEE5C45E2022FC6B00502880 /* MyFrameworkBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE5C4602022FC6B00502880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE5C4712022FD8300502880 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
@@ -79,6 +79,7 @@
 		BE0E7E5420204C1300B76CFC = {
 			isa = PBXGroup;
 			children = (
+				BE59BEC02024695C009ED17E /* BundleLoader */,
 				BE0E7E6020204C1300B76CFC /* MyFramework */,
 				BEE5C45F2022FC6B00502880 /* MyFrameworkBundle */,
 				BE0E7E5F20204C1300B76CFC /* Products */,
@@ -97,7 +98,6 @@
 		BE0E7E6020204C1300B76CFC /* MyFramework */ = {
 			isa = PBXGroup;
 			children = (
-				BEE5C4402022DE0100502880 /* BundleLoader */,
 				BE0E7E6120204C1300B76CFC /* MyFramework.h */,
 				BE0E7E73202050A200B76CFC /* MyFramework.m */,
 				BE0E7E6220204C1300B76CFC /* Info.plist */,
@@ -111,13 +111,14 @@
 			path = MyFramework;
 			sourceTree = "<group>";
 		};
-		BEE5C4402022DE0100502880 /* BundleLoader */ = {
+		BE59BEC02024695C009ED17E /* BundleLoader */ = {
 			isa = PBXGroup;
 			children = (
-				BEE5C4412022DE3600502880 /* BundleLoader.h */,
-				BEE5C4422022DE3600502880 /* BundleLoader.m */,
+				BE59BEC22024695C009ED17E /* BundleLoader.h */,
+				BE59BEC12024695C009ED17E /* BundleLoader.m */,
 			);
-			path = BundleLoader;
+			name = BundleLoader;
+			path = ../BundleLoader;
 			sourceTree = "<group>";
 		};
 		BEE5C45F2022FC6B00502880 /* MyFrameworkBundle */ = {
@@ -144,7 +145,7 @@
 				BE0E7E7C2020543D00B76CFC /* NextViewController.h in Headers */,
 				BE0E7E6320204C1300B76CFC /* MyFramework.h in Headers */,
 				BE0E7E772020532200B76CFC /* MyView.h in Headers */,
-				BEE5C4432022DE3600502880 /* BundleLoader.h in Headers */,
+				BE59BEC42024695C009ED17E /* BundleLoader.h in Headers */,
 				BE0E7E7120204F1C00B76CFC /* MyViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +274,7 @@
 				BE0E7E74202050A200B76CFC /* MyFramework.m in Sources */,
 				BE0E7E7D2020543D00B76CFC /* NextViewController.m in Sources */,
 				BE0E7E7220204F1C00B76CFC /* MyViewController.m in Sources */,
-				BEE5C4442022DE3600502880 /* BundleLoader.m in Sources */,
+				BE59BEC32024695C009ED17E /* BundleLoader.m in Sources */,
 				BE0E7E782020532200B76CFC /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
