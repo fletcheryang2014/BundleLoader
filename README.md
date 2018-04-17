@@ -7,4 +7,4 @@ BundleLoader帮你无缝地加载自定义bundle里的资源，而你无需修�
 
 Demo里已经测试了Framework加载bundle里xib，storyboard，图片，xcassets图片，普通文件资源的情况。其他常用的资源如Core Data模型，本地化资源等大家可以自行扩展和验证。
 
-https://juejin.im/post/5ab8f9b4f265da23766b49cb#comment
+https://juejin.im/post/5ab8f9b4f265da23766b49cb
