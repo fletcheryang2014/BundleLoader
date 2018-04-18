@@ -159,10 +159,14 @@ static void *NSBundleMainBundleKey = &NSBundleMainBundleKey;
     refCount++;
     NSBundle* bundle = objc_getAssociatedObject(self, NSBundleMainBundleKey);
     if (bundle == nil) {
+        //获取自定义资源Bundle的对象
         NSString *path = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"];
         NSBundle *resBundle = [NSBundle bundleWithPath:path];
+        
+        //把这个对象关联到mainBundle对象上
         objc_setAssociatedObject([NSBundle mainBundle], NSBundleMainBundleKey, resBundle, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
+        //把mainBundle对象的Class设为自定义Bundle子类的Class
         object_setClass([NSBundle mainBundle], [FrameworkBundle class]);
     }
 }
